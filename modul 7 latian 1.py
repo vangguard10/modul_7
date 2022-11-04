@@ -10,8 +10,6 @@ def pemilih():
             o=2
         elif int(angka) == 1:
             print('bukan bilangan prima')
-        elif int(angka) in range(2,4):
-            print('bilangan prima')
         elif int(angka) > 0:
             i=2
             while i in range(2,int(angka)):
