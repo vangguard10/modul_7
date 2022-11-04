@@ -1,3 +1,9 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Fri Nov  4 14:17:44 2022
+
+@author: fariz
+"""
 def penutup():
     print('''terimakasih telah menggunakan program saya.
 ig:@alfarizqiwira''')
@@ -11,15 +17,12 @@ def pemilih():
         elif int(angka) == 1:
             print('bukan bilangan prima')
         elif int(angka) > 0:
-            i=2
-            while i in range(2,int(angka)):
+            for i in range (2,int(angka)):
                 bil = int(angka)%i
                 if bil == 0:
                     h=h+1
-                    i+=1
                 elif bil > 0:
                     h=h
-                    i+=1        
             if h == 0:
                 print('bilangan prima')
             elif h > 0:            
